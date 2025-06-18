@@ -9,132 +9,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Farbpalette: Warm & Welcoming -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F9F8F7; /* Off-white background */
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #8A7968; /* Warm Taupe */
-            border: 4px solid #F9F8F7; /* Off-white background */
-        }
-        .flowchart-step {
-            position: relative;
-            padding-left: 40px;
-        }
-        .flowchart-step::before {
-            content: '➔';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            color: #8A7968; /* Warm Taupe */
-        }
-        .flowchart-step:first-child::before {
-            content: '';
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-800">
 
     <div class="container mx-auto p-4 md:p-8 max-w-6xl">
 
-        <header class="text-center mb-12 md:mb-16">
-            <h1 class="text-4xl md:text-6xl font-black text-[#6B5E51]">Veronika Haberzettl</h1>
-            <p class="text-xl md:text-2xl text-[#8A7968] mt-2">Unternehmerin & AI-Enthusiastin</p>
+        <header class="infographic-header text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black">Veronika Haberzettl</h1>
+            <p class="text-xl md:text-2xl mt-2">Unternehmerin & AI-Enthusiastin</p>
         </header>
 
-        <section id="summary" class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12 md:mb-16 ring-1 ring-gray-100">
+        <section id="summary" class="infographic-card rounded-lg shadow-lg p-6 md:p-8 mb-12 md:mb-16 ring-1 ring-gray-100">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div class="md:col-span-2">
-                    <h2 class="text-2xl font-bold text-[#6B5E51] mb-4">Professionelles Profil</h2>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h2 class="text-2xl font-bold text-heading mb-4">Professionelles Profil</h2>
+                    <p class="leading-relaxed">
                         Eine vielseitige und eigenmotivierte Fachfrau mit fast 20 Jahren Erfahrung in Unternehmertum, digitaler Contenterstellung und technischem Support. Erfolgreich eine digitale Marke von Grund auf aufgebaut und monetarisiert. Nutzt nun eine starke, selbst erlernte Grundlage in Python und eine Leidenschaft für KI, um hochwertige Dienstleistungen in den Bereichen Datenannotation, KI-Training und Programmierung anzubieten.
                     </p>
                 </div>
-                <div class="text-center bg-[#F4E9E2] p-6 rounded-lg">
-                    <div class="text-6xl md:text-7xl font-black text-[#6B5E51]">~20</div>
-                    <div class="text-lg font-bold text-[#6B5E51] mt-2">Jahre</div>
-                    <div class="text-md text-[#6B5E51]">Berufserfahrung</div>
+                <div class="infographic-highlight-box text-center p-6 rounded-lg">
+                    <div class="text-6xl md:text-7xl font-black">~20</div>
+                    <div class="text-lg font-bold mt-2">Jahre</div>
+                    <div class="text-md">Berufserfahrung</div>
                 </div>
             </div>
         </section>
 
         <section id="evolution" class="mb-12 md:mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#6B5E51] mb-8">Die Evolution der Fähigkeiten: Eine Zeitreise</h2>
-            <div class="relative border-l-4 border-[#D1C9C2] ml-4 md:ml-0 md:pl-4">
-                <div class="mb-8 pl-8 relative timeline-item">
-                    <h3 class="text-xl font-bold text-[#4A4A4A]">2005 - 2015: Unternehmerische Grundlagen & Tech-Support</h3>
-                    <p class="text-gray-600 mt-1">Start als eBay-Agentin, später Mitinhaberin eines Computer-Geschäfts. Entwicklung von technischen Fähigkeiten (Reparatur, Webseiten) und Geschäftssinn.</p>
+            <h2 class="text-3xl font-bold text-center text-heading mb-8">Die Evolution der Fähigkeiten: Eine Zeitreise</h2>
+            <div class="relative border-l-4 border-main ml-4 md:ml-0 md:pl-4">
+                <div class="mb-8 pl-8 relative infographic-timeline-item">
+                    <h3 class="text-xl font-bold">2005 - 2015: Unternehmerische Grundlagen & Tech-Support</h3>
+                    <p class="mt-1">Start als eBay-Agentin, später Mitinhaberin eines Computer-Geschäfts. Entwicklung von technischen Fähigkeiten (Reparatur, Webseiten) und Geschäftssinn.</p>
                 </div>
-                <div class="mb-8 pl-8 relative timeline-item">
-                    <h3 class="text-xl font-bold text-[#4A4A4A]">2015 - 2020: Aufbau der Digitalen Marke</h3>
-                    <p class="text-gray-600 mt-1">Gründung und Skalierung des Foodblogs "salala.de". Vertiefung der Kenntnisse in Content-Erstellung, SEO, Videoproduktion und WordPress.</p>
+                <div class="mb-8 pl-8 relative infographic-timeline-item">
+                    <h3 class="text-xl font-bold">2015 - 2020: Aufbau der Digitalen Marke</h3>
+                    <p class="mt-1">Gründung und Skalierung des Foodblogs "salala.de". Vertiefung der Kenntnisse in Content-Erstellung, SEO, Videoproduktion und WordPress.</p>
                 </div>
-                <div class="pl-8 relative timeline-item">
-                    <h3 class="text-xl font-bold text-[#4A4A4A]">2020 - Heute: Spezialisierung auf AI & Python</h3>
-                    <p class="text-gray-600 mt-1">Vollzeit-Selbstständigkeit mit dem Blog. Eigenständiges Erlernen von Python und aktive Integration von KI-APIs (OpenAI, Google) und Modellen (Whisper, Stable Diffusion) zur Automatisierung und Effizienzsteigerung.</p>
+                <div class="pl-8 relative infographic-timeline-item">
+                    <h3 class="text-xl font-bold">2020 - Heute: Spezialisierung auf AI & Python</h3>
+                    <p class="mt-1">Vollzeit-Selbstständigkeit mit dem Blog. Eigenständiges Erlernen von Python und aktive Integration von KI-APIs (OpenAI, Google) und Modellen (Whisper, Stable Diffusion) zur Automatisierung und Effizienzsteigerung.</p>
                 </div>
             </div>
         </section>
 
         <section id="competencies" class="mb-12 md:mb-16">
-            <h2 class="text-3xl font-bold text-center text-[#6B5E51] mb-8">Kernkompetenzen im Überblick</h2>
+            <h2 class="text-3xl font-bold text-center text-heading mb-8">Kernkompetenzen im Überblick</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6 ring-1 ring-gray-100">
-                    <h3 class="text-xl font-bold text-center text-[#6B5E51] mb-4">Ausgewogenes Skillset</h3>
-                    <p class="text-center text-gray-600 mb-4">Eine einzigartige Mischung aus kreativen, technischen und unternehmerischen Fähigkeiten.</p>
-                    <div class="chart-container">
+                <div class="infographic-card infographic-competencies-card rounded-lg shadow-lg p-6 ring-1 ring-gray-100">
+                    <h3 class="text-xl font-bold text-center mb-4">Ausgewogenes Skillset</h3>
+                    <p class="text-center mb-4">Eine einzigartige Mischung aus kreativen, technischen und unternehmerischen Fähigkeiten.</p>
+                    <div class="infographic-chart-container">
                         <canvas id="skillsRadarChart"></canvas>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 ring-1 ring-gray-100">
-                    <h3 class="text-xl font-bold text-center text-[#6B5E51] mb-4">Technologie-Stack</h3>
-                     <p class="text-center text-gray-600 mb-4">Praktische Erfahrung mit modernen Tools und Plattformen.</p>
-                    <div class="chart-container">
+                <div class="infographic-card infographic-competencies-card rounded-lg shadow-lg p-6 ring-1 ring-gray-100">
+                    <h3 class="text-xl font-bold text-center mb-4">Technologie-Stack</h3>
+                     <p class="text-center mb-4">Praktische Erfahrung mit modernen Tools und Plattformen.</p>
+                    <div class="infographic-chart-container">
                         <canvas id="toolsBarChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
         
-        <footer class="text-center border-t-2 border-[#D1C9C2] pt-8">
-            <h2 class="text-2xl font-bold text-[#6B5E51]">Bereit für die Zusammenarbeit?</h2>
-            <p class="text-gray-600 mt-2 mb-4">Kontaktieren Sie mich für Ihr nächstes Projekt in den Bereichen Datenannotation, KI-Training, Python-Automatisierung oder Content-Erstellung.</p>
-            <a href="mailto:vroni@salala.de" class="inline-block bg-[#8A7968] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#6B5E51] transition-colors">vroni@salala.de</a>
+        <footer class="infographic-footer text-center border-t-2 border-main pt-8">
+            <h2 class="text-2xl font-bold">Bereit für die Zusammenarbeit?</h2>
+            <p class="mt-2 mb-4">Kontaktieren Sie mich für Ihr nächstes Projekt in den Bereichen Datenannotation, KI-Training, Python-Automatisierung oder Content-Erstellung.</p>
+            <a href="mailto:vroni@salala.de" class="infographic-button inline-block font-bold py-3 px-6 rounded-lg transition-colors">vroni@salala.de</a>
         </footer>
 
     </div>
 
     <script>
         const wrapLabel = (label, maxWidth = 16) => {
-            if (label.length <= maxWidth) {
-                return label;
-            }
+            if (label.length <= maxWidth) { return label; }
             const words = label.split(' ');
             const lines = [];
             let currentLine = '';
@@ -149,71 +99,55 @@
             if (currentLine.length > 0) lines.push(currentLine);
             return lines;
         };
-
         const tooltipTitleCallback = (tooltipItems) => {
             const item = tooltipItems[0];
             let label = item.chart.data.labels[item.dataIndex];
             return Array.isArray(label) ? label.join(' ') : label;
         };
-        
-        const warmAndWelcoming = {
-            dark: '#6B5E51',
-            mid: '#8A7968',
-            light: '#A8A39D',
-            lightest: '#D1C9C2',
-            font: '#4A4A4A'
+        const cssVars = {
+            dark: getComputedStyle(document.documentElement).getPropertyValue('--color-text-heading').trim(),
+            mid: getComputedStyle(document.documentElement).getPropertyValue('--color-text-warmer').trim(),
+            light: getComputedStyle(document.documentElement).getPropertyValue('--color-background-sidebar').trim(),
+            lightest: getComputedStyle(document.documentElement).getPropertyValue('--color-border-accent-lighter').trim(),
+            font: getComputedStyle(document.documentElement).getPropertyValue('--color-text').trim()
         };
-
-        // Radar Chart
         const radarCtx = document.getElementById('skillsRadarChart').getContext('2d');
-        const radarLabels = ['KI & Machine Learning', 'Programmierung & Web', 'Content Creation', 'Business & Operations'];
         new Chart(radarCtx, {
             type: 'radar',
             data: {
-                labels: radarLabels.map(label => wrapLabel(label)),
+                labels: ['KI & Machine Learning', 'Programmierung & Web', 'Content Creation', 'Business & Operations'].map(l => wrapLabel(l)),
                 datasets: [{
                     label: 'Kompetenzniveau',
                     data: [85, 80, 95, 90],
                     backgroundColor: 'rgba(138, 121, 104, 0.2)',
-                    borderColor: warmAndWelcoming.mid,
-                    pointBackgroundColor: warmAndWelcoming.mid,
+                    borderColor: cssVars.mid,
+                    pointBackgroundColor: cssVars.mid,
                     pointBorderColor: '#fff',
                     pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: warmAndWelcoming.mid
+                    pointHoverBorderColor: cssVars.mid
                 }]
             },
             options: {
                 maintainAspectRatio: false, responsive: true,
-                scales: {
-                    r: {
-                        angleLines: { color: warmAndWelcoming.lightest },
-                        grid: { color: warmAndWelcoming.lightest },
-                        pointLabels: { font: { size: 12 }, color: warmAndWelcoming.dark },
-                        ticks: { color: warmAndWelcoming.mid, backdropColor: 'transparent', stepSize: 20 },
-                        suggestedMin: 0, suggestedMax: 100
-                    }
-                },
-                plugins: {
-                    legend: { display: false },
-                    tooltip: { callbacks: { title: tooltipTitleCallback } }
-                }
+                scales: { r: {
+                    angleLines: { color: cssVars.lightest },
+                    grid: { color: cssVars.lightest },
+                    pointLabels: { font: { size: 12 }, color: cssVars.dark },
+                    ticks: { color: cssVars.mid, backdropColor: 'transparent', stepSize: 20 },
+                    suggestedMin: 0, suggestedMax: 100
+                }},
+                plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } }
             }
         });
-
-        // Bar Chart
         const barCtx = document.getElementById('toolsBarChart').getContext('2d');
-        const toolLabels = ['Python', 'KI API Integration', 'Stable Diffusion', 'WordPress', 'DaVinci Resolve', 'Adobe Photoshop'];
         new Chart(barCtx, {
             type: 'bar',
             data: {
-                labels: toolLabels.map(label => wrapLabel(label)),
+                labels: ['Python', 'KI API Integration', 'Stable Diffusion', 'WordPress', 'DaVinci Resolve', 'Adobe Photoshop'].map(l => wrapLabel(l)),
                 datasets: [{
                     label: 'Erfahrung',
                     data: [75, 85, 70, 98, 90, 95],
-                    backgroundColor: [
-                        warmAndWelcoming.dark, warmAndWelcoming.mid, warmAndWelcoming.light,
-                        warmAndWelcoming.dark, warmAndWelcoming.mid, warmAndWelcoming.light
-                    ],
+                    backgroundColor: [ cssVars.dark, cssVars.mid, cssVars.light, cssVars.dark, cssVars.mid, cssVars.light ],
                     borderColor: '#fff', borderWidth: 2, borderRadius: 4
                 }]
             },
@@ -221,12 +155,9 @@
                 indexAxis: 'y', maintainAspectRatio: false, responsive: true,
                 scales: {
                     x: { grid: { display: false, drawBorder: false }, ticks: { display: false } },
-                    y: { grid: { display: false, drawBorder: false }, ticks: { color: warmAndWelcoming.font, font: { weight: 'bold' } } }
+                    y: { grid: { display: false, drawBorder: false }, ticks: { color: cssVars.font, font: { weight: 'bold' } } }
                 },
-                plugins: {
-                    legend: { display: false },
-                    tooltip: { callbacks: { title: tooltipTitleCallback } }
-                }
+                plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } }
             }
         });
     </script>
