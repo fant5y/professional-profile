@@ -4,7 +4,7 @@ This repository contains the source code for my personal career infographic, a d
 
 ---
 
-### **[➡️ View the Live Infographic Here](https://fant5y.github.io/professional-profile/)**
+### **[➡️ View the Live Infographic Here](https://fant5y.github.io/professional-profile/resume_english.html)**
 
 ---
 
