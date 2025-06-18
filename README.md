@@ -4,9 +4,7 @@ This repository contains the source code for my personal career infographic, a d
 
 ---
 
-### **[➡️ View the Live Infographic Here](https://DEIN-USERNAME.github.io/professional-profile/)**
-
-*(Ersetze `DEIN-USERNAME` durch deinen GitHub-Benutzernamen und `professional-profile` durch den Namen deines Repos, falls du einen anderen gewählt hast.)*
+### **[➡️ View the Live Infographic Here](https://fant5y.github.io/professional-profile/)**
 
 ---
 
