@@ -1,67 +1,107 @@
-/* Colors */
-
-:root{
-
+/* --- Color Variables --- */
+:root {
     --color-text: #4A4A4A;
     --color-text-warmer: #8A7968;
     --color-text-sidebar-hover: #F4E9E2;
+    --color-text-heading: #6B5E51;
+    --color-text-sidebar: #ffffff;
+    --color-text-sidebar-muted: #FFFFFFD8;
 
     --color-background-sidebar: #A8A39D;
     --color-background-off-white: #F9F8F7;
-    --color-background-infographic: var(--color-text-warmer);
+    --color-background-highlight: #F4E9E2;
+    --color-background-card: #ffffff;
 
     --color-border-accent-darker: #6B5E51;
     --color-border-accent-lighter: #D1C9C2;
-
 }
 
-/* General Body Styles */
+/* --- General Body Styles --- */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--color-background-off-white); /* Off-white background */
+    background-color: var(--color-background-off-white);
+    color: var(--color-text);
 }
+
 
 /* --- Styles for CV / Lebenslauf (cv_*.html) --- */
 
 .cv-main-container {
     max-width: 1200px;
     margin: auto;
-    background-color: white;
+    background-color: var(--color-background-card);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .cv-sidebar {
     background-color: var(--color-background-sidebar);
+    color: var(--color-text-sidebar);
 }
-
+.cv-sidebar h1, .cv-sidebar h3 {
+    color: var(--color-text-sidebar);
+}
 .cv-sidebar h2 {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-text-sidebar-muted);
     border-bottom: 2px solid var(--color-border-accent-darker);
+}
+.cv-sidebar p, .cv-sidebar .text-xs {
+    color: var(--color-text-sidebar-muted);
+}
+.cv-sidebar a {
+    color: var(--color-text-sidebar);
+    transition: color 0.2s;
+}
+.cv-sidebar a:hover {
+    color: var(--color-text-sidebar-hover);
 }
 
 .cv-main-content h2 {
-    color: var(--color-text-warmer);
-    border-bottom-color: var(--color-border-accent-lighter);
+    color: var(--color-text-heading);
+    border-bottom: 4px solid var(--color-border-accent-lighter);
 }
-
 .cv-main-content h3 {
-    color:  var(--color-text);
+    color: var(--color-text);
 }
-
-.cv-date-text {
+.cv-main-content .cv-date-text {
     color: var(--color-text-warmer);
 }
-
-.cv-sidebar a {
-    transition: color 0.2s;
-}
-
-.cv-sidebar a:hover {
-    color: var(--color-text-sidebar-hover); /* Light pink/beige for hover */
+.cv-main-content p, .cv-main-content li {
+    color: var(--color-text);
 }
 
 
 /* --- Styles for Infographic / Infografik (resume_*.html) --- */
+
+.infographic-header h1 {
+    color: var(--color-text-heading);
+}
+.infographic-header p {
+    color: var(--color-text-warmer);
+}
+
+.infographic-card {
+    background-color: var(--color-background-card);
+}
+.infographic-highlight-box {
+    background-color: var(--color-background-highlight);
+}
+.infographic-highlight-box div {
+     color: var(--color-text-heading);
+}
+
+.infographic-timeline-item h3,
+.infographic-competencies-card h3,
+.infographic-footer h2 {
+    color: var(--color-text-heading);
+}
+
+.infographic-button {
+    background-color: var(--color-text-warmer);
+    color: var(--color-text-sidebar);
+}
+.infographic-button:hover {
+    background-color: var(--color-text-heading);
+}
 
 .infographic-chart-container {
     position: relative;
@@ -72,13 +112,11 @@ body {
     height: 300px;
     max-height: 400px;
 }
-
 @media (min-width: 768px) {
     .infographic-chart-container {
         height: 350px;
     }
 }
-
 .infographic-timeline-item::before {
     content: '';
     position: absolute;
@@ -88,25 +126,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--color-background-infographic);
+    background-color: var(--color-text-warmer);
     border: 4px solid var(--color-background-off-white);
-}
-/* Styles for the flowchart element used in some infographic versions */
-.infographic-flowchart-step {
-    position: relative;
-    padding-left: 40px;
-}
-
-.infographic-flowchart-step::before {
-    content: '➔';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: var(--color-text-warmer); /* Warm Taupe */
-}
-
-.infographic-flowchart-step:first-child::before {
-    content: '';
 }
