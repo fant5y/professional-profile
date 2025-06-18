@@ -1,6 +1,6 @@
 # Veronika Haberzettl - Professional Profile & Career Infographic
 
-This repository contains the source code for my personal career infographic, a dynamic single-page application designed to visually represent my professional journey, skills, and core competencies.
+This repository contains the source code for my personal career resume as infographic and cv. The infographic is a dynamic single-page application designed to visually represent my professional journey, skills, and core competencies. All of them are available in English as well as in German.
 
 ---
 
@@ -16,7 +16,7 @@ The infographic is built to be fully responsive and visually appealing on all de
 
 ## Built With
 
-This project was built from scratch using modern web technologies:
+This project was built from scratch using modern web technologies (with a little help from Gemini 2.5 Pro for efficiency):
 
 * **HTML5**
 * **Tailwind CSS** for utility-first styling and responsive design.
