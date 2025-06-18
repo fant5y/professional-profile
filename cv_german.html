@@ -8,56 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Farbpalette: Warm & Welcoming -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .main-container {
-            max-width: 1200px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .sidebar {
-            background-color: #A8A39D; /* Muted, warm gray */
-        }
-        .sidebar h2 {
-            color: rgba(255, 255, 255, 0.8);
-            border-bottom: 2px solid #6B5E51; /* Darker accent */
-        }
-        .main-content h2 {
-            color: #6B5E51;
-            border-bottom-color: #D1C9C2; /* Lighter accent */
-        }
-        .main-content h3 {
-            color: #4A4A4A;
-        }
-        .date-text {
-            color: #8A7968; /* Warm Taupe */
-        }
-        .sidebar a {
-            transition: color 0.2s;
-        }
-        .sidebar a:hover {
-            color: #F4E9E2; /* Light pink/beige for hover */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-[#F9F8F7] p-4 md:p-8">
+<body class="p-4 md:p-8">
 
-    <div class="main-container md:grid md:grid-cols-12 min-h-screen">
+    <div class="cv-main-container md:grid md:grid-cols-12 min-h-screen">
         
-        <!-- Sidebar -->
-        <aside class="sidebar md:col-span-4 p-8 text-white">
+        <aside class="cv-sidebar md:col-span-4 p-8">
             <div class="text-center mb-12">
-                <h1 class="text-4xl font-black text-white">Veronika Haberzettl</h1>
-                <p class="text-lg text-white/80 mt-1">Unternehmerin & AI-Enthusiastin</p>
+                <h1 class="text-4xl font-black">Veronika Haberzettl</h1>
+                <p class="text-lg mt-1">Unternehmerin & AI-Enthusiastin</p>
             </div>
 
             <div class="mb-10">
                 <h2 class="text-xl font-bold uppercase tracking-wider pb-2 mb-4">Kontakt</h2>
-                <div class="space-y-3 text-white">
+                <div class="space-y-3">
                     <p>📍 Regensburg, Deutschland</p>
                     <p>📧 <a href="mailto:vroni@salala.de">vroni@salala.de</a></p>
                     <p>🌐 <a href="https://salala.de" target="_blank" rel="noopener noreferrer">salala.de</a></p>
@@ -68,83 +33,80 @@
 
             <div class="mb-10">
                 <h2 class="text-xl font-bold uppercase tracking-wider pb-2 mb-4">Fähigkeiten</h2>
-                <div class="space-y-4 text-white">
+                <div class="space-y-4">
                     <div>
-                        <h3 class="font-bold mb-1 text-white/90">KI & Machine Learning</h3>
-                        <p class="text-sm text-white/80">API-Integration, Datenannotation, Stable Diffusion, Whisper</p>
+                        <h3 class="font-bold mb-1">KI & Machine Learning</h3>
+                        <p class="text-sm">API-Integration, Datenannotation, Stable Diffusion, Whisper</p>
                     </div>
                     <div>
-                        <h3 class="font-bold mb-1 text-white/90">Programmierung & Web</h3>
-                        <p class="text-sm text-white/80">Python, WordPress, HTML/CSS, SEO</p>
+                        <h3 class="font-bold mb-1">Programmierung & Web</h3>
+                        <p class="text-sm">Python, WordPress, HTML/CSS, SEO</p>
                     </div>
                      <div>
-                        <h3 class="font-bold mb-1 text-white/90">Content & Design</h3>
-                        <p class="text-sm text-white/80">DaVinci Resolve, Adobe Photoshop, Copywriting</p>
+                        <h3 class="font-bold mb-1">Content & Design</h3>
+                        <p class="text-sm">DaVinci Resolve, Adobe Photoshop, Copywriting</p>
                     </div>
                 </div>
             </div>
 
             <div>
                 <h2 class="text-xl font-bold uppercase tracking-wider pb-2 mb-4">Ausbildung</h2>
-                <div class="space-y-4 text-white">
+                <div class="space-y-4">
                      <div>
                         <h3 class="font-bold">Zertifizierte Ernährungsberaterin</h3>
-                        <p class="text-sm text-white/80">OTL Akademie | 2018 - 2019</p>
+                        <p class="text-sm">OTL Akademie | 2018 - 2019</p>
                     </div>
                     <div>
                         <h3 class="font-bold">Kauffrau für Bürokommunikation (IHK)</h3>
-                        <p class="text-sm text-white/80">Berufsschule, Regensburg | 2002 - 2005</p>
-                        <p class="text-xs text-white/80 italic mt-1">Inkl. KMK-Fremdsprachenzertifikat Englisch (Stufe II)</p>
+                        <p class="text-sm">Berufsschule, Regensburg | 2002 - 2005</p>
+                        <p class="text-xs italic mt-1">Inkl. KMK-Fremdsprachenzertifikat Englisch (Stufe II)</p>
                     </div>
                 </div>
             </div>
         </aside>
 
-        <!-- Main Content -->
-        <main class="main-content md:col-span-8 p-8 md:p-12">
+        <main class="cv-main-content md:col-span-8 p-8 md:p-12">
             <section class="mb-12">
-                <h2 class="text-3xl font-bold border-b-4 pb-2 mb-4">Berufliches Profil</h2>
-                <p class="text-gray-700 leading-relaxed">
+                <h2 class="text-3xl font-bold pb-2 mb-4">Berufliches Profil</h2>
+                <p class="leading-relaxed">
                     Eine vielseitige und eigenmotivierte Fachfrau mit fast 20 Jahren Erfahrung in Unternehmertum, digitaler Contenterstellung und technischem Support. Erfolgreich eine digitale Marke von Grund auf aufgebaut und monetarisiert, wobei alle Aspekte von der Webentwicklung bis zur Videoproduktion abgedeckt wurden. Nutzt nun eine starke, selbst erlernte Grundlage in Python und eine Leidenschaft für KI, um hochwertige Dienstleistungen in den Bereichen Datenannotation, KI-Training und Einstiegsprogrammierung anzubieten. Lernt schnell und beweist die Fähigkeit, neue Technologien zu meistern und eigenständig Ergebnisse zu liefern.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-3xl font-bold border-b-4 pb-2 mb-6">Berufserfahrung</h2>
+                <h2 class="text-3xl font-bold pb-2 mb-6">Berufserfahrung</h2>
                 <div class="space-y-8">
                     <div>
                         <div class="flex justify-between items-baseline">
                             <h3 class="text-xl font-bold">Mitgründerin, Digital Creator & AI-Spezialistin</h3>
-                            <p class="text-sm font-medium date-text">2015 - Heute</p>
+                            <p class="text-sm font-medium cv-date-text">2015 - Heute</p>
                         </div>
-                        <p class="text-md font-semibold text-gray-600">Nico & Veronika Haberzettl GbR (salala.de)</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <p class="text-md font-semibold">Nico & Veronika Haberzettl GbR (salala.de)</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
                             <li>Einen Nischen-Foodblog mitgegründet und zu einem profitablen Vollzeit-Unternehmen skaliert.</li>
                             <li>Eigenständig Python gelernt, um Aufgaben zu automatisieren und KI-APIs (OpenAI, Google, Anthropic) zu integrieren.</li>
                             <li>Lokale KI-Modelle wie Whisper für Transkription und Stable Diffusion für Bilderstellung genutzt.</li>
                             <li>Den gesamten Content-Lebenszyklus verwaltet: SEO, Texten, Fotografie und Videobearbeitung (DaVinci Resolve).</li>
                         </ul>
                     </div>
-
                     <div>
                         <div class="flex justify-between items-baseline">
                             <h3 class="text-xl font-bold">Vertriebsinnendienst</h3>
-                            <p class="text-sm font-medium date-text">2016 - 2018</p>
+                            <p class="text-sm font-medium cv-date-text">2016 - 2018</p>
                         </div>
-                        <p class="text-md font-semibold text-gray-600">MR Datentechnik Vertriebs- und Service GmbH</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <p class="text-md font-semibold">MR Datentechnik Vertriebs- und Service GmbH</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
                            <li>Hauptansprechpartnerin für große deutsche Firmenkunden und deren europäische Standorte.</li>
                            <li>Kundenbeziehungen gepflegt, Angebote erstellt und Aufträge in einem dynamischen IT-Umfeld bearbeitet.</li>
                         </ul>
                     </div>
-                    
                     <div>
                         <div class="flex justify-between items-baseline">
                              <h3 class="text-xl font-bold">Unternehmerin / Technischer Support</h3>
-                             <p class="text-sm font-medium date-text">2005 - 2015</p>
+                             <p class="text-sm font-medium cv-date-text">2005 - 2015</p>
                         </div>
-                        <p class="text-md font-semibold text-gray-600">PC-SPEZIALIST & weitere Projekte</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <p class="text-md font-semibold">PC-SPEZIALIST & weitere Projekte</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
                            <li>Ein Computergeschäft mitgeleitet, verantwortlich für Büro, Verkauf und technischen Service.</li>
                            <li>Praktische Erfahrung in der PC- und Smartphone-Reparatur gesammelt.</li>
                            <li>Ein erfolgreiches eBay-Verkaufsagentur-Geschäft aufgebaut und geführt.</li>
@@ -154,8 +116,6 @@
                 </div>
             </section>
         </main>
-
     </div>
-
 </body>
 </html>
